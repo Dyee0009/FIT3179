@@ -4,15 +4,22 @@
     <title>34167641 FIT3179 Data Visualisation 2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="Data_Visualisation_2/css/index.css">
 </head>
 <body>
     <h1>An Introduction to the History of Video Games (1980 - 2026)</h1>
     <h2>Introduction</h2>
     <p>Insert Introduction Text Here</p>
+    <div id="bar1"></div>
 
     <h2>An Overview of Video Game Sales</h2>
     <p>Charts and Texts</p>
@@ -28,5 +35,13 @@
 
     <h2>A Look into Video Game Publishers</h2>
     <p>Charts and Texts</p>
+
+
+    <script type="text/javascript">
+        var spec2 = "Data_Visualisation_2/js/barchart.vg.json";
+        vegaEmbed('#bar1', spec2).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
 </body>
 </html>
