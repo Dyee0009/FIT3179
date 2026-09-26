@@ -1,0 +1,12 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "test line chart on html",
+    "data": {
+        "url": "Data_Visualisation_2/data/d3-yearly_trends.csv"
+    },
+    "mark": "line",
+    "encoding": {
+        "y": {"field": "titles_released", "type": "quantitative"},
+        "x": {"field": "year", "type": "temporal"}
+    }
+}

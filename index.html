@@ -20,6 +20,7 @@
     <h2>Introduction</h2>
     <p>Insert Introduction Text Here</p>
     <div id="bar1"></div>
+    <div id="line1"></div>
 
     <h2>An Overview of Video Game Sales</h2>
     <p>Charts and Texts</p>
@@ -38,10 +39,10 @@
 
 
     <script type="text/javascript">
-        var spec2 = "Data_Visualisation_2/js/barchart.vg.json";
-        vegaEmbed('#bar1', spec2).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
+        var bar1 = "Data_Visualisation_2/js/barchart.vg.json";
+        var line1 = "Data_Visualisation_2/js/linechart.vg.json";
+        vegaEmbed('#bar1', bar1).then(function(result) {}).catch(console.error);
+        vegaEmbed('#line1', line1).then(function(result) {}).catch(console.error);
     </script>
 </body>
 </html>
