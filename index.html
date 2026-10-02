@@ -3,16 +3,25 @@
 <head>
     <title>34167641 FIT3179 Data Visualisation 2</title>
 
+    <!--Importing pure css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.1.0/build/pure-min.css"
+    integrity="sha384-kj0X2NG2KHBie8Tq8fH1kxnyWM9XsXQpq7XdwbKmFKjwwaXGKBlB2Klu3VOltSFx" crossorigin="anonymous">
+
+    <!--Fixing width of website based on user's screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Importing Vega-Lite resources-->
     <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
 
+    <!--Importing fonts from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
     
+    <!--CSS file for styling-->
     <link rel="stylesheet" href="Data_Visualisation_2/css/index.css">
 </head>
 <body>
@@ -41,7 +50,7 @@
     <script type="text/javascript">
         var bar1 = "Data_Visualisation_2/js/barchart.vg.json";
         var line1 = "Data_Visualisation_2/js/linechart.vg.json";
-        vegaEmbed('#bar1', bar1).then(function(result) {}).catch(console.error);
+        vegaEmbed('#bar1', bar1, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#line1', line1).then(function(result) {}).catch(console.error);
     </script>
 </body>
