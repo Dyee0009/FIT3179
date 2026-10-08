@@ -1,5 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
     "description": "test bar chart on html",
     "data": {
         "url": "Data_Visualisation_2/data/d3-platform_summary.csv"
