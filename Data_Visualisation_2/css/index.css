@@ -38,6 +38,16 @@ body {
     padding-bottom: 30px;
 }
 
+.authorship {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 12px;
+}
+
 h1 {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -46,23 +56,25 @@ h1 {
     font-variation-settings:
         "wdth" 100;
     text-align: center;
-    font-size: 40px;
+    font-size: 56px;
 }
 
 h2 {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 650;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    font-size: 35px;
 }
 
 p {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 450;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    font-size: 20px;
 }
