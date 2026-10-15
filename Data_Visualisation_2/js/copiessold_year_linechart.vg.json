@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Video Game Copies Sold by Year (in Millions)",
+    "description": "Video Game Copies Sold by Year (in Millions)",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-yearly_trends.csv"
+    },
+    "transform": [{"filter": "datum.year <= 2024"}],
+    "mark": "line",
+    "encoding": {
+        "x": {"field": "year", "type": "quantitative", "title": "Year", "axis": {"format": "d"}},
+        "y": {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+         "tooltip": [
+            {"field": "year", "type": "quantitative", "title": "Year:", "format": "d"},
+            {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
+        ]
+    },
+    "config": {
+        "font": "Noto Sans"
+    }
+}

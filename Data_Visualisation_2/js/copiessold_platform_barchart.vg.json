@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Copies Sold by Platform Type (in Millions)",
+    "description": "Copies Sold by Platform Type (in Millions)",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-platform_summary.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
+        "y": {"aggregate": "sum", "field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+        "tooltip": [
+            {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
+            {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
+        ]
+    },
+    "config": {
+        "font": "Noto Sans"
+    }
+}
