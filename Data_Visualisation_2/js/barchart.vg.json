@@ -9,11 +9,14 @@
     "background": "transparent",
     "description": "test bar chart on html",
     "data": {
-        "url": "Data_Visualisation_2/data/d3-platform_summary.csv"
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-platform_summary.csv"
     },
     "mark": "bar",
     "encoding": {
         "y": {"field": "platform_type", "type": "nominal"},
         "x": {"field": "titles", "type": "quantitative"}
+    },
+    "config": {
+        "font": "Noto Sans"
     }
 }
