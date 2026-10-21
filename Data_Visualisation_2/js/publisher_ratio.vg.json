@@ -1,0 +1,100 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Market Share of Video Game Publishers",
+    "description": "Market Share of Video Game Publishers",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-Video_Games_Sales_Cleaned.csv"
+    },
+  "transform": [
+    {
+      "filter": "datum.release_year <= 2024 && datum.release_year >= 1985"
+    },
+    {
+      "calculate": "trim(datum.publisher)",
+      "as": "cleaned_raw_publisher"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "total_sales", "as": "initial_sales"}
+      ],
+      "groupby": ["cleaned_raw_publisher"]
+    },
+    {
+      "calculate": "datum.initial_sales > 400 ? datum.cleaned_raw_publisher : 'Others'",
+      "as": "grouped_publisher"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "initial_sales", "as": "sum_sales"}
+      ],
+      "groupby": ["grouped_publisher"]
+    },
+    {
+      "window": [{"op": "sum", "field": "sum_sales", "as": "grand_total"}],
+      "frame": [null, null]
+    },
+    {
+      "calculate": "datum.sum_sales / datum.grand_total",
+      "as": "percentage"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "sum_sales", 
+      "type": "quantitative", 
+      "stack": true
+    },
+    "color": {
+      "field": "grouped_publisher", 
+      "type": "nominal",
+      "sort": {
+        "field": "sum_sales",
+        "order": "descending"
+      },
+      "scale": {
+        "domain": ["Others", "Activision", "Electronic Arts", "EA Sports", "Ubisoft"],
+        "range": ["#648FFF", "#785EF0", "#DC267F", "#FE6100", "#FFB000"]
+      },
+      "title": "Publisher"
+    },
+    "order": {
+      "field": "sum_sales",
+      "type": "quantitative",
+      "sort": "descending"
+    },
+    "tooltip": [
+      {"field": "sum_sales", "type": "quantitative", "title": "Total Sales:", "format": ","},
+      {"field": "grouped_publisher", "type": "nominal", "title": "Publisher:"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 50, "outerRadius": 90}
+    },
+    {
+      "mark": {
+        "type": "text", 
+        "radius": 115, 
+        "fontSize": 12, 
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "percentage", 
+          "type": "quantitative", 
+          "format": ".1%"
+        }
+      }
+    }
+  ],
+    "config": {
+        "font": "Noto Sans"
+    }
+}

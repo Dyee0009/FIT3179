@@ -119,6 +119,7 @@
                     <h2>A Look into Video Game Publishers</h2>
                 </div>
                 <div class="pure-u-11-24">
+                    <div id="publisher_ratio"></div>
                     <p>Charts and Texts</p>
                 </div>
                 <div class="pure-u-2-24">
@@ -172,6 +173,7 @@
         var revenue_platform = "Data_Visualisation_2/js/revenue_platform_barchart.vg.json";
 
         var sales_region = "Data_Visualisation_2/js/choroplethmap.vg.json";
+        var publisher_ratio = "Data_Visualisation_2/js/publisher_ratio.vg.json";
 
         vegaEmbed('#titles_year', titles_year, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#copiessold_year', copiessold_year, { "actions":false }).then(function(result) {}).catch(console.error);
@@ -183,6 +185,7 @@
         vegaEmbed('#revenue_platform', revenue_platform, { "actions":false }).then(function(result) {}).catch(console.error);
 
         vegaEmbed('#sales_region', sales_region, { "actions":false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#publisher_ratio', publisher_ratio, { "actions":false }).then(function(result) {}).catch(console.error);
     </script>
 </body>
 </html>
