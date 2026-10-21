@@ -7,8 +7,8 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Video Game Copies Sold by Year (in Millions)",
-    "description": "Video Game Copies Sold by Year (in Millions)",
+    "title": "Copies Sold by Year (in Millions)",
+    "description": "Copies Sold by Year (in Millions)",
     "data": {
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-yearly_trends.csv"
     },

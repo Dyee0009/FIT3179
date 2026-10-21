@@ -7,8 +7,8 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Market Share of Video Game Publishers",
-    "description": "Market Share of Video Game Publishers",
+    "title": "Market Share of Publishers by Copies Sold",
+    "description": "Market Share of Publishers by Copies Sold",
     "data": {
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-Video_Games_Sales_Cleaned.csv"
     },
@@ -70,8 +70,8 @@
       "sort": "descending"
     },
     "tooltip": [
-      {"field": "sum_sales", "type": "quantitative", "title": "Total Sales:", "format": ","},
-      {"field": "grouped_publisher", "type": "nominal", "title": "Publisher:"}
+      {"field": "grouped_publisher", "type": "nominal", "title": "Publisher:"},
+      {"field": "sum_sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
     ]
   },
   "layer": [

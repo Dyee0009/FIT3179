@@ -7,8 +7,8 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Average Video Game Price on Release by Platform Type",
-    "description": "Average Video Game Price on Release by Platform Type",
+    "title": "Average Price on Release by Platform Type",
+    "description": "Average Price on Release by Platform Type",
     "data": {
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-platform_summary.csv"
     },
