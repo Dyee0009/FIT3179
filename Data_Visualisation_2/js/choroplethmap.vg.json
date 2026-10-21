@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Copies Sold by Region",
+    "description": "Copies Sold by Region",
+    "projection": {"type": "equalEarth"},
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/ne_110m.json",
+        "format":  {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+    },
+    "transform": [
+        {
+            "lookup": "properties.CONTINENT",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-Video_Games_Sales_(1980-2024)-Raw.csv"
+                },
+                "key": 
+            }
+        }
+    ]
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
+        "y": {"aggregate": "sum", "field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+        "tooltip": [
+            {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
+            {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
+        ]
+    },
+    "config": {
+        "font": "Noto Sans"
+    }
+}
