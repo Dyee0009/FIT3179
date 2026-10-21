@@ -57,6 +57,7 @@
             <div class="pure-g">
                 <div class="pure-u-1">
                     <h2>An Overview of Video Game Sales</h2>
+                    <div id="sales_region"></div>
                 </div>
                 <div class="pure-u-11-24">
                     <div id="titles_year"></div>
@@ -170,6 +171,8 @@
         var launchprice_platform = "Data_Visualisation_2/js/launchprice_platform_barchart.vg.json";
         var revenue_platform = "Data_Visualisation_2/js/revenue_platform_barchart.vg.json";
 
+        var sales_region = "Data_Visualisation_2/js/choroplethmap.vg.json";
+
         vegaEmbed('#titles_year', titles_year, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#copiessold_year', copiessold_year, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#launchprice_year', launchprice_year, { "actions":false }).then(function(result) {}).catch(console.error);
@@ -178,6 +181,8 @@
         vegaEmbed('#copiessold_platform', copiessold_platform, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#launchprice_platform', launchprice_platform, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#revenue_platform', revenue_platform, { "actions":false }).then(function(result) {}).catch(console.error);
+
+        vegaEmbed('#sales_region', sales_region, { "actions":false }).then(function(result) {}).catch(console.error);
     </script>
 </body>
 </html>

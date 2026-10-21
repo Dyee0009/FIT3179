@@ -19,19 +19,22 @@
             "lookup": "properties.CONTINENT",
             "from": {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-Video_Games_Sales_(1980-2024)-Raw.csv"
+                    "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-total_sales_by_continent.csv"
                 },
-                "key": 
+                "key": "continent",
+                "fields": "sales"
             }
         }
-    ]
-    "mark": "bar",
+    ],
+    "mark": {"type": "geoshape"},
     "encoding": {
-        "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
-        "y": {"aggregate": "sum", "field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+        "color": {
+            "field": "sales",
+            "type": "quantitative"
+        },
         "tooltip": [
-            {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
-            {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
+            {"field": "properties.CONTINENT", "type": "nominal", "title": "Continent:"},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","}
         ]
     },
     "config": {
