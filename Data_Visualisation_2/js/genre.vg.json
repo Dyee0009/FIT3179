@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Genre",
+    "description": "Genre",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-genre_summary.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "genre", "type": "nominal", "title": "Genre"},
+        "y": {"field": "total_sales_m", "aggregate": "sum", "type": "quantitative", "title": "Total Sales (in Millions)"},
+        "tooltip": [
+            {"field": "genre", "type": "nominal", "title": "Genre:"},
+            {"field": "total_sales_m", "aggregate": "sum", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","}
+        ]
+    },
+    "config": {
+        "font": "Noto Sans"
+    }
+}

@@ -50,45 +50,85 @@
             </div>
         </div>
 
-        <!--grid for Video Game Sales-->
+        <!--grid for Video Game Platforms-->
         <div class="container">
             <div class="pure-g">
                 <div class="pure-u-1">
-                    <h2>An Overview of Video Game Sales</h2>
-                    <div id="sales_region"></div>
+                    <h2>An Overview of Video Game Platforms</h2>
                 </div>
-                <div class="pure-u-11-24">
-                    <div id="titles_year"></div>
-                    <div id="launchprice_year"></div>
-                    <p>Charts and Texts</p>
-                </div>
-                <div class="pure-u-2-24">
-                </div>
-                <div class="pure-u-11-24">
-                    <div id="copiessold_year"></div>
-                    <div id="revenue_year"></div>
-                    <p>Charts and Texts</p>
-                </div>
-            </div>
-        </div>
-
-                <!--grid for Video Game Platforms-->
-        <div class="container">
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <h2>Video Game Platforms</h2>
-                </div>
+                <!--Charts-->
                 <div class="pure-u-11-24">
                     <div id="titles_platform"></div>
                     <div id="launchprice_platform"></div>
-                    <p>Charts and Texts</p>
                 </div>
                 <div class="pure-u-2-24">
                 </div>
                 <div class="pure-u-11-24">
                     <div id="copiessold_platform"></div>
                     <div id="revenue_platform"></div>
-                    <p>Charts and Texts</p>
+                </div>
+
+                <!--Texts-->
+                <div class="pure-u-11-24">
+                    <p>
+                        It comes as no suprise that consoles dominate the video game industry.
+                        This is largely attributed to consoles being the only platform to play games on in the early years.
+                    </p>
+                    <p>
+                        Consoles generally have a lot more titles released due to them being standarised with every version, making it easier to work with.
+                    </p>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                    <p>
+                        Platforms like PCs and mobile devices became more popular as the devices got more affordable and readily available throughout the world.
+                    </p>
+                    <p>
+                        Although these devices have less titles released due to them having an insanely large amount of variations,
+                        their accessibility in the modern era contributes to the high numbers for copies sold.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--grid for Video Game Sales-->
+        <div class="container">
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>Deep Dive into Video Game Sales</h2>
+                </div>
+                <!--Charts-->
+                <div class="pure-u-11-24">
+                    <div id="titles_year"></div>
+                    <div id="launchprice_year"></div>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                    <div id="copiessold_year"></div>
+                    <div id="revenue_year"></div>
+                </div>
+
+                <!--Texts-->
+                <div class="pure-u-11-24">
+                    <p>
+                        We can observe the growing popularity and interest by both developers and especially the public.
+                        This is shown by the steady increase in titles released and an enormous surge of sales.
+                    </p>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                    <p>
+                        This increase in sales is also contributed by the steady decline in game prices.
+                        Together with the increase in accessibility of devices, allows for the rapid growth of the industry.
+                    </p>
+                </div>
+
+                <!--Charts-->
+                <div class="pure-u-1">
+                    <div id="sales_region" style="padding-top: 30px;"></div>
                 </div>
             </div>
         </div>
@@ -99,6 +139,16 @@
                 <div class="pure-u-1">
                     <h2>Video Game Genres</h2>
                 </div>
+                <!--Charts-->
+                <div class="pure-u-11-24">
+                    <div id="genre"></div>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                </div>
+
+                <!--Texts-->
                 <div class="pure-u-11-24">
                     <p>Charts and Texts</p>
                 </div>
@@ -116,8 +166,17 @@
                 <div class="pure-u-1">
                     <h2>A Look into Video Game Publishers</h2>
                 </div>
+                <!--Charts-->
                 <div class="pure-u-11-24">
                     <div id="publisher_ratio"></div>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                </div>
+
+                <!--Texts-->
+                <div class="pure-u-11-24">
                     <p>Charts and Texts</p>
                 </div>
                 <div class="pure-u-2-24">
@@ -132,10 +191,19 @@
         <div class="container">
             <div class="pure-g">
                 <div class="pure-u-1">
-                    <h2>A Look into Video Game Developers</h2>
+                    <h2>A Look into User Interactions</h2>
                 </div>
+                <!--Charts-->
                 <div class="pure-u-11-24">
                     <div id="user_progress"></div>
+                </div>
+                <div class="pure-u-2-24">
+                </div>
+                <div class="pure-u-11-24">
+                </div>
+
+                <!--Texts-->
+                <div class="pure-u-11-24">
                     <p>Charts and Texts</p>
                 </div>
                 <div class="pure-u-2-24">
@@ -188,6 +256,7 @@
         var sales_region = "Data_Visualisation_2/js/choroplethmap.vg.json";
         var publisher_ratio = "Data_Visualisation_2/js/publisher_ratio.vg.json";
         var user_progress = "Data_Visualisation_2/js/user_play_progress.vg.json";
+        var genre = "Data_Visualisation_2/js/genre.vg.json";
 
         vegaEmbed('#titles_year', titles_year, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#copiessold_year', copiessold_year, { "actions":false }).then(function(result) {}).catch(console.error);
@@ -201,6 +270,7 @@
         vegaEmbed('#sales_region', sales_region, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#publisher_ratio', publisher_ratio, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#user_progress', user_progress, { "actions":false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#genre', genre, { "actions":false }).then(function(result) {}).catch(console.error);
     </script>
 </body>
 </html>
