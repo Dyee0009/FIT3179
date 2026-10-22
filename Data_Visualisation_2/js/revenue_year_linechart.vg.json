@@ -13,7 +13,7 @@
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-yearly_trends.csv"
     },
     "transform": [
-        {"filter": "datum.year <= 2024"},
+        {"filter": "datum.year <= 2023"},
         {"calculate": "datum.total_sales_m * datum.avg_launch_price", "as": "estimated_revenue_m"}
     ],
     "mark": "line",

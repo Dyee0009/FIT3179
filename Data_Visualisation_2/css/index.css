@@ -48,6 +48,17 @@ body {
     font-size: 12px;
 }
 
+.authorship-italic {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 12px;
+}
+
+
 h1 {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;

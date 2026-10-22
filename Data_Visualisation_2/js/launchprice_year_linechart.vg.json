@@ -12,7 +12,7 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-yearly_trends.csv"
     },
-    "transform": [{"filter": "datum.year <= 2024"}],
+    "transform": [{"filter": "datum.year <= 2023"}],
     "mark": "line",
     "encoding": {
         "x": {"field": "year", "type": "quantitative", "title": "Year", "axis": {"format": "d"}},
