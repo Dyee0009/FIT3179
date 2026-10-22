@@ -7,8 +7,8 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Copies Sold by Region",
-    "description": "Copies Sold by Region",
+    "title": "Copies Sold by Region Per Capita",
+    "description": "Copies Sold by Region Per Capita",
     "projection": {"type": "equalEarth"},
     "data": {
         "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/ne_110m_admin_0_countries.topojson",
@@ -64,11 +64,17 @@
         "encoding": {
             "color": {
             "field": "sales_per_capita",
-            "type": "quantitative"
+            "type": "quantitative",
+            "scale": {
+                "type": "log",
+                "scheme": "greens"
+            },
+            "title": "Sales Per Capita"
             },
             "tooltip": [
             {"field": "custom_region", "type": "nominal", "title": "Continent:"},
-            {"field": "sales_per_capita", "type": "quantitative", "title": "Sales per Capita:", "format": ","}
+            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "sales_per_capita", "type": "quantitative", "title": "Sales per Capita:", "format": ".2f"}
             ]
         }
         }
