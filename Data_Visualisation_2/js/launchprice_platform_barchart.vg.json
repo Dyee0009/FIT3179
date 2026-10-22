@@ -15,10 +15,10 @@
     "mark": "bar",
     "encoding": {
         "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
-        "y": {"aggregate": "sum", "field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price"},
+        "y": {"field": "avg_launch_price", "aggregate": "sum", "type": "quantitative", "title": "Average Launch Price"},
          "tooltip": [
             {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
-            {"field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price:", "format": ","}
+            {"field": "avg_launch_price", "aggregate": "sum", "type": "quantitative", "title": "Average Launch Price:", "format": ","}
         ]
     },
     "config": {

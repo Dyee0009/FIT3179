@@ -15,10 +15,10 @@
     "mark": "bar",
     "encoding": {
         "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
-        "y": {"aggregate": "sum", "field": "titles", "type": "quantitative", "title": "Total Titles"},
+        "y": {"field": "titles", "aggregate": "sum", "type": "quantitative", "title": "Total Titles"},
         "tooltip": [
             {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
-            {"field": "titles", "type": "quantitative", "title": "Total Titles:", "format": ","}
+            {"field": "titles", "aggregate": "sum", "type": "quantitative", "title": "Total Titles:", "format": ","}
         ]
     },
     "config": {

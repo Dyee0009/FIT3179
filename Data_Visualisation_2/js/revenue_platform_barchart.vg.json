@@ -18,12 +18,12 @@
     "mark": "bar",
     "encoding": {
         "x": {"field": "platform_type", "type": "nominal", "title": "Platform Type"},
-        "y": {"aggregate": "sum", "field": "estimated_revenue_m", "type": "quantitative", "title": "Estimated Revenue (in Millions)"},
+        "y": {"field": "estimated_revenue_m", "aggregate": "sum", "type": "quantitative", "title": "Estimated Revenue (in Millions)"},
          "tooltip": [
             {"field": "platform_type", "type": "nominal", "title": "Platform Type:"},
             {"field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price:", "format": ","},
             {"field": "total_sales_m", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
-            {"field": "estimated_revenue_m", "type": "quantitative", "title": "Estimated Revenue (in Millions):", "format": ",.2f"}
+            {"field": "estimated_revenue_m", "aggregate": "sum", "type": "quantitative", "title": "Estimated Revenue (in Millions):", "format": ",.2f"}
         ]
     },
     "config": {
