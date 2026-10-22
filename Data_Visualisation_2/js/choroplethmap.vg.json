@@ -42,7 +42,11 @@
         {
         "transform": [
             {
-            "lookup": "properties.CONTINENT",
+            "calculate": "datum.properties.NAME == 'Japan' ? 'Japan' : datum.properties.CONTINENT",
+            "as": "custom_region"
+            },
+            {
+            "lookup": "custom_region",
             "from": {
                 "data": {
                 "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-total_sales_by_continent.csv"
@@ -50,17 +54,21 @@
                 "key": "continent",
                 "fields": ["sales"]
             }
-            }
+            },
+             {
+                "calculate": "datum.sales / datum.population",
+                "as": "sales_per_capita"
+                }
         ],
         "mark": {"type": "geoshape", "stroke": "white"},
         "encoding": {
             "color": {
-            "field": "sales",
+            "field": "sales_per_capita",
             "type": "quantitative"
             },
             "tooltip": [
-            {"field": "properties.CONTINENT", "type": "nominal", "title": "Continent:"},
-            {"field": "sales", "type": "quantitative", "title": "Continent:", "format": ","}
+            {"field": "custom_region", "type": "nominal", "title": "Continent:"},
+            {"field": "sales_per_capita", "type": "quantitative", "title": "Sales per Capita:", "format": ","}
             ]
         }
         }

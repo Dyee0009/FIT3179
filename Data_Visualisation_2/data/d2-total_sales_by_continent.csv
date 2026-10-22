@@ -1,7 +1,8 @@
-continent,sales
-Africa,649.85
-Asia,684.3
-Europe,1910.63
-North America,3278.51
-Oceania,1910.63
-South America,649.85
+continent,sales,population
+Africa,649.85,1446.88
+Asia,649.85,4622.66
+Europe,1910.63,746.96
+North America,3278.51,380.48
+Oceania,1910.63,45.05
+South America,649.85,654.37
+Japan,684.3,125.00
