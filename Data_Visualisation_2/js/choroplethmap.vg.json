@@ -52,7 +52,7 @@
                 "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-total_sales_by_continent.csv"
                 },
                 "key": "continent",
-                "fields": ["sales"]
+                "fields": ["sales", "population"]
             }
             },
              {
