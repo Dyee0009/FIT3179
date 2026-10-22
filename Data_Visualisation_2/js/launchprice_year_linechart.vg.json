@@ -19,7 +19,7 @@
         "y": {"field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price"},
          "tooltip": [
             {"field": "year", "type": "quantitative", "title": "Year:", "format": "d"},
-            {"field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price:", "format": ","}
+            {"field": "avg_launch_price", "type": "quantitative", "title": "Average Launch Price:", "format": ".2f"}
         ]
     },
     "config": {
