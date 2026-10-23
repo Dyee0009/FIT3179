@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": 300,
+    "autosize": {
+        "type": "fit",
+        "contains": "padding"
+    },
+    "background": "transparent",
+    "title": "Top 3 Publisher Regions by Region",
+    "description": "Top 3 Publisher Regions by Region",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-top3_sales_by_publisher_region.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "continent", "type": "nominal", "title": "Continent"},
+        "y": {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions)"},
+        "color": {"field": "publisher_region", "type": "nominal", "title": "Publisher Region"},
+        "tooltip": [
+            {"field": "continent", "type": "nominal", "title": "Continent:"},
+            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "publisher_region", "type": "nominal", "title": "Publisher Region:"}
+        ]
+    },
+    "config": {
+        "font": "Noto Sans"
+    }
+}

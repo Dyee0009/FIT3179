@@ -7,18 +7,20 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Genre",
-    "description": "Genre",
+    "title": "Top 3 Genres by Region",
+    "description": "Top 3 Genres by Region",
     "data": {
-        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d3-genre_summary.csv"
+        "url": "https://raw.githubusercontent.com/Dyee0009/FIT3179/refs/heads/main/Data_Visualisation_2/data/d2-top3_sales_by_continent_genre.csv"
     },
     "mark": "bar",
     "encoding": {
-        "x": {"field": "genre", "type": "nominal", "title": "Genre"},
-        "y": {"field": "total_sales_m", "aggregate": "sum", "type": "quantitative", "title": "Total Sales (in Millions)"},
+        "x": {"field": "continent", "type": "nominal", "title": "Continent"},
+        "y": {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions)"},
+        "color": {"field": "genre", "type": "nominal", "title": "Genre"},
         "tooltip": [
-            {"field": "genre", "type": "nominal", "title": "Genre:"},
-            {"field": "total_sales_m", "aggregate": "sum", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","}
+            {"field": "continent", "type": "nominal", "title": "Continent:"},
+            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "genre", "type": "nominal", "title": "Genre:"}
         ]
     },
     "config": {
