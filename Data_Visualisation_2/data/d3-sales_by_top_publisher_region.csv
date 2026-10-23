@@ -1,0 +1,8 @@
+continent,publisher_region,sales,org_latitude,org_longitude,dest_latitude,dest_longitude
+Africa,USA,68990.21,37.09,-95.71,7.19,21.09
+Asia,USA,68990.21,37.09,-95.71,43.68,87.33
+Europe,USA,178370.16,37.09,-95.71,54.90,25.32
+Japan,Japan,81361.69,35.68,139.76,36.20,138.25
+North America,USA,276420.35,37.09,-95.71,48.17,-100.17
+Oceania,USA,68990.21,37.09,-95.71,-18.5,160.0
+South America,USA,68990.21,37.09,-95.71,-15.60,-56.10

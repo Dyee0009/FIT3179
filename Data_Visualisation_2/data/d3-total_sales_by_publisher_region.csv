@@ -1,0 +1,106 @@
+continent,publisher_region,sales
+Africa,USA,68990.21
+Africa,Japan,39285.5
+Africa,France,5253.41
+Africa,Poland,4617.51
+Africa,Sweden,855.5
+Africa,UK,626.54
+Africa,Belgium,580.32
+Africa,Germany,564.77
+Africa,Finland,557.28
+Africa,Italy,538.95
+Africa,Austria,514.27
+Africa,Canada,173.02
+Africa,Various,170.38
+Africa,Denmark,133.12
+Africa,Spain,127.36
+Asia,USA,68990.21
+Asia,Japan,39285.5
+Asia,France,5253.41
+Asia,Poland,4617.51
+Asia,Sweden,855.5
+Asia,UK,626.54
+Asia,Belgium,580.32
+Asia,Germany,564.77
+Asia,Finland,557.28
+Asia,Italy,538.95
+Asia,Austria,514.27
+Asia,Canada,173.02
+Asia,Various,170.38
+Asia,Denmark,133.12
+Asia,Spain,127.36
+Europe,USA,178370.16
+Europe,Japan,101591.68
+Europe,France,13647.21
+Europe,Poland,12083.55
+Europe,Sweden,2209.19
+Europe,UK,1628.92
+Europe,Finland,1521.69
+Europe,Belgium,1520.61
+Europe,Germany,1494.34
+Europe,Italy,1413.03
+Europe,Austria,1294.22
+Europe,Canada,428.22
+Europe,Various,424.41
+Europe,Spain,333.35
+Europe,Denmark,332.03000000000003
+Japan,Japan,81361.69
+Japan,USA,48407.38
+Japan,France,3648.4
+Japan,Poland,3277.51
+Japan,Sweden,583.6
+Japan,UK,432.15
+Japan,Belgium,407.3
+Japan,Finland,405.2
+Japan,Germany,388.87
+Japan,Italy,378.69
+Japan,Austria,351.91
+Japan,Various,115.81
+Japan,Canada,115.15
+Japan,Denmark,92.15
+Japan,Spain,83.72
+North America,USA,276420.35
+North America,Japan,156879.7
+North America,France,21028.28
+North America,Poland,18442.92
+North America,Sweden,3372.87
+North America,UK,2532.56
+North America,Germany,2301.06
+North America,Belgium,2295.44
+North America,Finland,2267.73
+North America,Italy,2180.43
+North America,Austria,1979.4
+North America,Canada,676.9300000000001
+North America,Various,638.67
+North America,Spain,510.82
+North America,Denmark,510.3
+Oceania,USA,68990.21
+Oceania,Japan,39285.5
+Oceania,France,5253.41
+Oceania,Poland,4617.51
+Oceania,Sweden,855.5
+Oceania,UK,626.54
+Oceania,Belgium,580.32
+Oceania,Germany,564.77
+Oceania,Finland,557.28
+Oceania,Italy,538.95
+Oceania,Austria,514.27
+Oceania,Canada,173.02
+Oceania,Various,170.38
+Oceania,Denmark,133.12
+Oceania,Spain,127.36
+South America,USA,68990.21
+South America,Japan,39285.5
+South America,France,5253.41
+South America,Poland,4617.51
+South America,Sweden,855.5
+South America,UK,626.54
+South America,Belgium,580.32
+South America,Germany,564.77
+South America,Finland,557.28
+South America,Italy,538.95
+South America,Austria,514.27
+South America,Canada,173.02
+South America,Various,170.38
+South America,Denmark,133.12
+South America,Spain,127.36

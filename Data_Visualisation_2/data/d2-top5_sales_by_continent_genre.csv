@@ -1,0 +1,36 @@
+continent,genre,sales
+Africa,Sports,128.06
+Africa,Action,112.21000000000001
+Africa,Shooter,108.21000000000001
+Africa,Misc,58.51
+Africa,Racing,56.04
+Asia,Sports,128.06
+Asia,Action,112.21000000000001
+Asia,Shooter,108.21000000000001
+Asia,Misc,58.51
+Asia,Racing,56.04
+Europe,Sports,341.42
+Europe,Action,340.95
+Europe,Shooter,323.54
+Europe,Racing,177.58
+Europe,Misc,146.56
+Japan,Role-Playing,130.06
+Japan,Sports,109.0
+Japan,Action,79.79
+Japan,Fighting,58.12
+Japan,Misc,56.160000000000004
+North America,Sports,604.65
+North America,Action,564.46
+North America,Shooter,508.32
+North America,Misc,295.18
+North America,Racing,266.73
+Oceania,Sports,341.42
+Oceania,Action,340.95
+Oceania,Shooter,323.54
+Oceania,Racing,177.58
+Oceania,Misc,146.56
+South America,Sports,128.06
+South America,Action,112.21000000000001
+South America,Shooter,108.21000000000001
+South America,Misc,58.51
+South America,Racing,56.04

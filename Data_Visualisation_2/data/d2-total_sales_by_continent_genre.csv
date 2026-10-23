@@ -1,0 +1,141 @@
+continent,genre,sales
+Africa,Action,112.21000000000001
+Africa,Action-Adventure,18.4
+Africa,Adventure,30.11
+Africa,Board Game,0.02
+Africa,Education,0.08
+Africa,Fighting,28.57
+Africa,MMO,1.03
+Africa,Misc,58.51
+Africa,Music,4.93
+Africa,Party,0.52
+Africa,Platform,30.27
+Africa,Puzzle,7.3100000000000005
+Africa,Racing,56.04
+Africa,Role-Playing,33.71
+Africa,Sandbox,0.12
+Africa,Shooter,108.21000000000001
+Africa,Simulation,24.34
+Africa,Sports,128.06
+Africa,Strategy,7.28
+Africa,Visual Novel,0.13
+Asia,Action,112.21000000000001
+Asia,Action-Adventure,18.4
+Asia,Adventure,30.11
+Asia,Board Game,0.02
+Asia,Education,0.08
+Asia,Fighting,28.57
+Asia,MMO,1.03
+Asia,Misc,58.51
+Asia,Music,4.93
+Asia,Party,0.52
+Asia,Platform,30.27
+Asia,Puzzle,7.3100000000000005
+Asia,Racing,56.04
+Asia,Role-Playing,33.71
+Asia,Sandbox,0.12
+Asia,Shooter,108.21000000000001
+Asia,Simulation,24.34
+Asia,Sports,128.06
+Asia,Strategy,7.28
+Asia,Visual Novel,0.13
+Europe,Action,340.95
+Europe,Action-Adventure,59.52
+Europe,Adventure,91.5
+Europe,Board Game,0.22
+Europe,Education,0.19999999999999998
+Europe,Fighting,79.69
+Europe,MMO,2.94
+Europe,Misc,146.56
+Europe,Music,15.02
+Europe,Party,1.81
+Europe,Platform,98.91
+Europe,Puzzle,25.39
+Europe,Racing,177.58
+Europe,Role-Playing,90.89
+Europe,Sandbox,0.56
+Europe,Shooter,323.54
+Europe,Simulation,86.86
+Europe,Sports,341.42
+Europe,Strategy,27.0
+Europe,Visual Novel,0.07
+Japan,Action,79.79
+Japan,Action-Adventure,5.46
+Japan,Adventure,45.83
+Japan,Board Game,0.04
+Japan,Education,0.0
+Japan,Fighting,58.12
+Japan,MMO,1.3900000000000001
+Japan,Misc,56.160000000000004
+Japan,Music,5.84
+Japan,Party,1.19
+Japan,Platform,30.39
+Japan,Puzzle,29.080000000000002
+Japan,Racing,19.76
+Japan,Role-Playing,130.06
+Japan,Sandbox,0.52
+Japan,Shooter,33.97
+Japan,Simulation,35.84
+Japan,Sports,109.0
+Japan,Strategy,36.8
+Japan,Visual Novel,5.0600000000000005
+North America,Action,564.46
+North America,Action-Adventure,65.09
+North America,Adventure,157.26
+North America,Board Game,0.06
+North America,Education,0.68
+North America,Fighting,172.7
+North America,MMO,3.9499999999999997
+North America,Misc,295.18
+North America,Music,25.97
+North America,Party,2.67
+North America,Platform,179.79
+North America,Puzzle,58.52
+North America,Racing,266.73
+North America,Role-Playing,171.42
+North America,Sandbox,0.69
+North America,Shooter,508.32
+North America,Simulation,152.82
+North America,Sports,604.65
+North America,Strategy,47.06
+North America,Visual Novel,0.49000000000000005
+Oceania,Action,340.95
+Oceania,Action-Adventure,59.52
+Oceania,Adventure,91.5
+Oceania,Board Game,0.22
+Oceania,Education,0.19999999999999998
+Oceania,Fighting,79.69
+Oceania,MMO,2.94
+Oceania,Misc,146.56
+Oceania,Music,15.02
+Oceania,Party,1.81
+Oceania,Platform,98.91
+Oceania,Puzzle,25.39
+Oceania,Racing,177.58
+Oceania,Role-Playing,90.89
+Oceania,Sandbox,0.56
+Oceania,Shooter,323.54
+Oceania,Simulation,86.86
+Oceania,Sports,341.42
+Oceania,Strategy,27.0
+Oceania,Visual Novel,0.07
+South America,Action,112.21000000000001
+South America,Action-Adventure,18.4
+South America,Adventure,30.11
+South America,Board Game,0.02
+South America,Education,0.08
+South America,Fighting,28.57
+South America,MMO,1.03
+South America,Misc,58.51
+South America,Music,4.93
+South America,Party,0.52
+South America,Platform,30.27
+South America,Puzzle,7.3100000000000005
+South America,Racing,56.04
+South America,Role-Playing,33.71
+South America,Sandbox,0.12
+South America,Shooter,108.21000000000001
+South America,Simulation,24.34
+South America,Sports,128.06
+South America,Strategy,7.28
+South America,Visual Novel,0.13
