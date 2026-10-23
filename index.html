@@ -189,6 +189,11 @@
                 <div class="pure-u-11-24">
                     <p>Charts and Texts</p>
                 </div>
+
+                <!--Charts-->
+                <div class="pure-u-1">
+                    <div id="publisher_region"></div>
+                </div>
             </div>
         </div>
 
@@ -263,6 +268,7 @@
         var user_progress = "Data_Visualisation_2/js/user_play_progress.vg.json";
         var genre = "Data_Visualisation_2/js/genre.vg.json";
         var popular_genre = "Data_Visualisation_2/js/proportionalsymbolmap.vg.json";
+        var publisher_region = "Data_Visualisation_2/js/flowmap.vg.json";
 
         vegaEmbed('#titles_year', titles_year, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#copiessold_year', copiessold_year, { "actions":false }).then(function(result) {}).catch(console.error);
@@ -278,6 +284,7 @@
         vegaEmbed('#user_progress', user_progress, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#genre', genre, { "actions":false }).then(function(result) {}).catch(console.error);
         vegaEmbed('#popular_genre', popular_genre, { "actions":false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#publisher_region', publisher_region, { "actions":false }).then(function(result) {}).catch(console.error);
     </script>
 </body>
 </html>
