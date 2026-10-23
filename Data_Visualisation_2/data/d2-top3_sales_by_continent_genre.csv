@@ -1,0 +1,22 @@
+continent,genre,sales
+Africa,Sports,128.06
+Africa,Action,112.21
+Africa,Shooter,108.21
+Asia,Sports,128.06
+Asia,Action,112.21
+Asia,Shooter,108.21
+Europe,Sports,341.42
+Europe,Action,340.95
+Europe,Shooter,323.54
+Japan,Role-Playing,130.06
+Japan,Sports,109.0
+Japan,Action,79.79
+North America,Sports,604.65
+North America,Action,564.46
+North America,Shooter,508.32
+Oceania,Sports,341.42
+Oceania,Action,340.95
+Oceania,Shooter,323.54
+South America,Sports,128.06
+South America,Action,112.21
+South America,Shooter,108.21

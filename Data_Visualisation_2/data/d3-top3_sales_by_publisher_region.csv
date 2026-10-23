@@ -1,0 +1,22 @@
+continent,publisher_region,sales
+Africa,USA,68990.21
+Africa,Japan,39285.5
+Africa,France,5253.41
+Asia,USA,68990.21
+Asia,Japan,39285.5
+Asia,France,5253.41
+Europe,USA,178370.16
+Europe,Japan,101591.68
+Europe,France,13647.21
+Japan,Japan,81361.69
+Japan,USA,48407.38
+Japan,France,3648.4
+North America,USA,276420.35
+North America,Japan,156879.7
+North America,France,21028.28
+Oceania,USA,68990.21
+Oceania,Japan,39285.5
+Oceania,France,5253.41
+South America,USA,68990.21
+South America,Japan,39285.5
+South America,France,5253.41
