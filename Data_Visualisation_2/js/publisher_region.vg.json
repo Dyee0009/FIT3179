@@ -15,11 +15,15 @@
     "mark": "bar",
     "encoding": {
         "x": {"field": "continent", "type": "nominal", "title": "Continent"},
-        "y": {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions)"},
-        "color": {"field": "publisher_region", "type": "nominal", "title": "Publisher Region"},
+        "y": {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+        "color": {"field": "publisher_region", "type": "nominal", "title": "Publisher Region",
+                    "scale": {
+                        "domain": ["France", "Japan", "USA"],
+                        "range": ["#56B4E9", "#E69F00", "#009E73"]
+                    }},
         "tooltip": [
             {"field": "continent", "type": "nominal", "title": "Continent:"},
-            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
             {"field": "publisher_region", "type": "nominal", "title": "Publisher Region:"}
         ]
     },

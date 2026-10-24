@@ -43,7 +43,7 @@
             "size": {
                 "field": "sales",
                 "type": "quantitative",
-                "title": "Total Sales (in Millions)",
+                "title": "Copies Sold (in Millions)",
                 "scale": {
                     "type": "threshold",
                     "domain": [150, 300, 450, 600],
@@ -53,11 +53,15 @@
             "color": {
             "field": "genre",
             "type": "nominal",
-            "title": "Genre"
+            "title": "Genre",
+            "scale": {
+                "domain": ["Role-Playing", "Sports"],
+                "range": ["#FFC107", "#004D40"]
+            }
             },
             "tooltip": [
             {"field": "continent", "type": "nominal", "title": "Continent:"},
-            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
             {"field": "genre", "type": "nominal", "title": "Genre:"}
             ]
         }

@@ -73,7 +73,8 @@
             },
             "tooltip": [
             {"field": "custom_region", "type": "nominal", "title": "Continent:"},
-            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
+            {"field": "population", "type": "quantitative", "title": "Population (in Millions):", "format": ","},
             {"field": "sales_per_capita", "type": "quantitative", "title": "Sales per Capita:", "format": ".2f"}
             ]
         }

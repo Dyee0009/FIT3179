@@ -15,11 +15,15 @@
     "mark": "bar",
     "encoding": {
         "x": {"field": "continent", "type": "nominal", "title": "Continent"},
-        "y": {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions)"},
-        "color": {"field": "genre", "type": "nominal", "title": "Genre"},
+        "y": {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions)"},
+        "color": {"field": "genre", "type": "nominal", "title": "Genre",
+                    "scale": {
+                        "domain": ["Action", "Role-Playing", "Shooter", "Sports"],
+                        "range": ["#1E88E5", "#FFC107", "#D81B60", "#004D40"]
+                    }},
         "tooltip": [
             {"field": "continent", "type": "nominal", "title": "Continent:"},
-            {"field": "sales", "type": "quantitative", "title": "Total Sales (in Millions):", "format": ","},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
             {"field": "genre", "type": "nominal", "title": "Genre:"}
         ]
     },

@@ -7,8 +7,8 @@
         "contains": "padding"
     },
     "background": "transparent",
-    "title": "Reach of Publisher Region's Dominance",
-    "description": "Reach of Publisher Region's Dominance",
+    "title": "Reach of Top Publisher Regions",
+    "description": "Reach of Top Publisher Regions",
     "projection": {"type": "equalEarth"},
     "layer": [
         {
@@ -39,7 +39,7 @@
             "projection": {
             "type": "equalEarth"
             },
-            "mark": {"type": "circle"},
+            "mark": {"type": "circle", "size": 80, "color": "red"},
             "encoding": {
             "longitude": {
                 "field": "org_longitude",
@@ -48,7 +48,10 @@
             "latitude": {
                 "field": "org_latitude",
                 "type": "quantitative"
-            }
+            },
+            "tooltip": [
+            {"field": "publisher_region", "type": "nominal", "title": "Publisher Region:"}
+            ]
             }
         },
         {
@@ -58,7 +61,7 @@
             "projection": {
             "type": "equalEarth"
             },
-            "mark": {"type": "circle"},
+            "mark": {"type": "circle", "size": 80, "color": "blue"},
             "encoding": {
             "longitude": {
                 "field": "dest_longitude",
@@ -67,7 +70,10 @@
             "latitude": {
                 "field": "dest_latitude",
                 "type": "quantitative"
-            }
+            },
+            "tooltip": [
+            {"field": "continent", "type": "nominal", "title": "Continent:"}
+            ]
             }
         },
         {
@@ -97,8 +103,14 @@
             },
             "size": {
                 "field": "sales",
-                "type": "quantitative"
-            }
+                "type": "quantitative",
+                "title": "Copies Sold (in Millions)"
+            },
+            "tooltip": [
+            {"field": "continent", "type": "nominal", "title": "Continent:"},
+            {"field": "sales", "type": "quantitative", "title": "Copies Sold (in Millions):", "format": ","},
+            {"field": "publisher_region", "type": "nominal", "title": "Top Publisher Region:"}
+            ]
             }
         }
     ],

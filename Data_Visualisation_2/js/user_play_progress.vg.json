@@ -17,7 +17,11 @@
     "encoding": {
         "x": {"field": "year", "type": "quantitative", "title": "Year", "axis": {"format": "d"}},
         "y": {"field": "total", "type": "quantitative", "title": "Entries"},
-        "color": {"field": "play_progress", "type": "nominal", "title": "Status"},
+        "color": {"field": "play_progress", "type": "nominal", "title": "Status",
+                    "scale": {
+                        "domain": ["Backlogs", "Playing", "Plays", "Wishlist"],
+                        "range": ["#332288", "#117733", "#DDCC77", "#CC6677"]
+                    }},
         "tooltip": [
             {"field": "year", "type": "quantitative", "title": "Year:", "format": "d"},
             {"field": "total", "type": "quantitative", "title": "Entries:", "format": ","},
